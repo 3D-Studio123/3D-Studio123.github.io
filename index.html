@@ -1,28 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="language" content="english">
-<title>AR Demo</title>
-<meta name="description" content="En3D">
-<meta name="author" content="Yifang Men">
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-<style >
-    model-viewer{
-        height: 400px;
-        margin: 0 auto;
-    }
-    .preload img{
-        height:400px;
-    }
-</style>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Model Viewer Demonstration</title>
+        <style>
+            model-viewer {
+                height: 60vh;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
 
-<body>
-    <h1 align="center">AR Demos</h1>
+        <h1>Model viewer demonstration</h1>
+        <p>
+            This is a code demonstration of the <a href="https://modelviewer.dev/" target="_blank">Google Model-viewer</a> 3D web component implemented in a HTML page.
+        </p>
 
-    <model-viewer src="./assets/animation_Curry.glb" camera-controls ar shadow-intensity="1" ios-src="./assets/animation_Curry.usdz"></model-viewer>
-<!--    <model-viewer src="https://menyifang.github.io/projects/AR_demo/assets/animation_SpiderMan.glb" camera-controls ar shadow-intensity="1" ios-src="https://menyifang.github.io/projects/AR_demo/assets/animation_SpiderMan.usdz"></model-viewer>-->
-<!--    <model-viewer src="https://menyifang.github.io/projects/AR_demo/assets/animation_woman1.glb" camera-controls ar shadow-intensity="1" ios-src="https://menyifang.github.io/projects/AR_demo/assets/animation_woman1.usdz"></model-viewer>-->
-<!--    <model-viewer src="https://menyifang.github.io/projects/AR_demo/assets/animation_woman.glb" camera-controls ar shadow-intensity="1" ios-src="https://menyifang.github.io/projects/AR_demo/assets/animation_woman.usdz"></model-viewer>-->
-
-
-</body></html>
+        <model-viewer
+            auto-rotate
+            camera-controls
+            loading="eager"
+            alt="cute little pupper"
+            src="model.gltf"
+        >
+        </model-viewer>
+        
+        <!-- Import the component -->
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    </body>
+</html>
